@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Glow Farms</title>
+    <link rel="icon" href="assets/Glow-removebg-preview.png">
+    <link rel="stylesheet" href="farming.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&family=Alkatra&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <!-- SWIPER.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-------------------- PRELOADER -------------------->
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
+
+    <!-------------------- SCROLL TO TOP BUTTON -------------------->
+    <div id="scrollTop" onclick="scrollToTop()">
+        <i class="ri-arrow-up-line"></i>
+    </div>
+
+    <!-------------------- Header -------------------->
+    <div class="home" id="home">
+        <nav>
+            <div class="nav-logo">
+                <i class="ri-suitcase-line"></i>
+                <h2 id="company" onclick="scrollToTop()">GlowFarms</h2>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#home" class="pages">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="pages">About</a>
+                    </li>
+                    <li>
+                        <a href="#featured" class="pages">Our Products</a>
+                    </li>
+
+                </ul>
+                <div class="nav-close" id="nav-close" onclick="hideNav()">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+        </nav>
+        <!-- LANDING PAGE -->
+        <div class="header" id="header">
+            <div class="content" data-inViewport="slideTop">
+                <h2 id="title"><span>Glow</span> Farms</h2>
+                <p>
+                    Welcome to our farming website! Our platform is dedicated to providing you <br>with comprehensive
+                    information and resources about all things related to agriculture and farming.<br> Whether you are a
+                    seasoned farmer looking to expand your
+                    knowledge and skills, <br>or just starting out and looking for guidance, we are here to help.
+                </p>
+                <button onclick="scrollToAbout()">Learn more!<i class="ri-arrow-right-line"></i></button>
+            </div>
+            <img class="image" src="assets/header.png" data-inViewport="slideLeft">
+        </div>
+    </div>
+    <!--------------------  ABOUT -------------------->
+    <div class="about" id="about">
+        <h2>About</h2>
+        <div class="content first">
+            <img src="assets/leaf.png" data-inViewport="slideLeftDown">
+            <p data-inViewport="slideLeft"><span>Overview</span><br>Our website may provide educational resources
+                <br>such as
+                articles, videos, tutorials, and courses to farmers<br> and other interested individuals.
+                They may also offer <br>a platform for farmers to sell their products<br>
+                directly to consumers or connect with potential<br> customers or partners
+            </p>
+        </div>
+        <div class="content">
+            <p data-inViewport="slideLeft"><span>Why Choose Us?</span><br>From fresh fruits and vegetables to dairy
+                products, <br>our selection of organic food is designed to meet<br>the diverse needs of our customers
+                while supporting<br> a healthier planet. Our organic products are free from<br>harmful chemicals and
+                gene-modified ingredients.
+
+            </p>
+            <img src="assets/fruits.png" id="special" data-inViewport="slideLeft">
+        </div>
+        <div class="content">
+            <img src="assets/man (1).png" id="special" data-inViewport="slideLeft">
+            <p data-inViewport="slideLeft"><span>What is our main goal</span><br>Our goal is to empower farmers with
+                the
+                knowledge<br>
+                and tools they need to run successful and sustainable operations. <br>We believe that by sharing
+                information and resources, <br>we can help build a thriving farming
+                community and contribute to<br> a more resilient and food-secure future
+
+
+            </p>
+
+        </div>
+    </div>
+    <!-------------------- Featured Products ------------------>
+    <div class="featured" id="featured">
+        <h2>Our Products</h2>
+        <p>Here are some featured organic products we provide. Check them out!</p>
+        <!-- Swiper -->
+        <div class="swiper" data-inViewport="slideTop">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                    <h2> Carrot<br><sub>30 per 500g</sub></h2>
+                    <img src="assets/carrots.png">
+                </div>
+                <div class="swiper-slide">
+
+                    <h2>Juicy Oranges<br><sub>50 per 1kg</sub></h2>
+                    <img src="assets/oranges.png">
+
+                </div>
+                <div class="swiper-slide">
+
+                    <h2>Summer Watermelon<br><sub>100 per 1kg</sub></h2>
+                    <img src="assets/watermelon.png">
+                </div>
+                <div class="swiper-slide">
+
+                    <h2>Fresh Tomatoes<br><sub>10 per 500g</sub></h2>
+                    <img src="assets/tomato.png">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+
+
+        <!-------------------- FOOTER ------------------->
+        <div class="footer">
+
+            <p>© Copyright Deepthi G <br>
+
+
+
+
+            </p>
+        </div>
+
+        <!-------------------- SCRIPT JS ------------------->
+        <script src="farming.js"></script>
+</body>
+
+</html>
